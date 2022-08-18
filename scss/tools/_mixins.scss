@@ -83,6 +83,13 @@
     line-height: 1.75rem;
 }
 
+@mixin font-14-300-175($color) {
+    color: $color;
+    font-size: $Ys-fs14;
+    font-weight: 300;
+    line-height: 1.75rem;
+}
+
 @mixin font-14-500-175($color) {
     color: $color;
     font-size: $Ys-fs14;
@@ -97,4 +104,22 @@
 
     border: $grosor solid $color;
     border-radius: $radius;
+}
+
+@mixin linea-difuminada() {
+    border-bottom: 2px solid $Ys-border-color;
+    mix-blend-mode: normal;
+    opacity: 0.1;
+}
+
+
+
+//MAGN
+
+@mixin margin1() {
+    margin: 3rem auto 3rem 3.9rem;
+}
+
+@mixin margin2() {
+    margin: 0.6rem auto 0.6rem 3.9rem;
 }

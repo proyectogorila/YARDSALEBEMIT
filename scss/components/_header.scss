@@ -7,6 +7,7 @@
         height: 1.754rem;
         width: 2.3rem;
         margin-left: 1.9rem;
+        cursor: pointer;
 
         @include sd() {
             display: none;
@@ -17,13 +18,14 @@
     &__logo-yard-sale {
         width: 9.6rem;
         height: 2.0rem;
+        cursor: pointer;
 
         @include sd() {
             width: 14.4rem;
             height: 3.0rem;
             margin-left: 5.175rem;
             margin-right: 5.225rem;
-            cursor: pointer;
+
         }
     }
 
@@ -40,23 +42,43 @@
     }
 
     &__menu-lista-item {
-
         @include sd() {
             @include font-16-500-20($Ys-secondary-color-font);
             margin: 0 0.85rem;
             cursor: pointer;
         }
 
+        &:hover {
+            @include sd() {
+                color: $Ys-black;
+            }
+        }
+
         &--verde-con-borde {
             @include sd() {
                 @include font-16-700-20($Ys-primary-color);
                 padding: 0.5rem 1.4rem;
-
                 @include border(0.1rem, $Ys-primary-color, 1rem);
-
             }
         }
+
+        &--verde-con-borde:hover {
+            @include sd() {
+                color: $Ys-white;
+                background-color: $Ys-primary-color;
+            }
+        }
+
+
+
+
     }
+
+    /*  &__efecto-hover:hover {
+        @include sd() {
+            color: $Ys-black;
+        }
+    } */
 
     //Menu de sing in solo visible en version desktop
     &__menu-singin {
@@ -64,19 +86,19 @@
 
 
         @include sd() {
+            justify-content: flex-end;
             display: flex;
             flex-direction: row;
             width: 25rem;
-
         }
 
     }
 
-    &__menu-singin :nth-child(1) {
+    /*  &__menu-singin :nth-child(1) {
         display: none;
-    }
+    } */
 
-    &__menu-singin-items {
+    &__menu-singin-item {
         @include sd() {
             @include font-14-500-175($Ys-primary-color);
             margin: auto 0.85rem;
@@ -84,6 +106,10 @@
 
             &--color-negro {
                 @include font-14-500-175($Ys-black);
+            }
+
+            &--hiden {
+                display: none;
             }
         }
     }
@@ -93,12 +119,13 @@
         width: 2.0rem;
         height: 2.1rem;
         margin-right: 1.85rem;
+        cursor: pointer;
 
         @include sd() {
             width: 2.0rem;
             height: 2.1rem;
             margin: auto 4.6rem;
-            cursor: pointer;
+
         }
     }
 }

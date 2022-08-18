@@ -510,9 +510,7 @@ label {
   color: inherit;
   display: block;
   /* opcional */
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  /* appearance: none; */
 }
 
 /* Reseteamos las tablas */
@@ -626,10 +624,21 @@ header {
 /* ======================================================= */
 /* COMPENTS */
 /* ======================================================= */
+.c-header {
+  /*  &__efecto-hover:hover {
+      @include sd() {
+          color: $Ys-black;
+      }
+  } */
+  /*  &__menu-singin :nth-child(1) {
+      display: none;
+  } */
+}
 .c-header__logo-hamburger {
   height: 1.754rem;
   width: 2.3rem;
   margin-left: 1.9rem;
+  cursor: pointer;
 }
 @media (min-width: 1101px) {
   .c-header__logo-hamburger {
@@ -639,6 +648,7 @@ header {
 .c-header__logo-yard-sale {
   width: 9.6rem;
   height: 2rem;
+  cursor: pointer;
 }
 @media (min-width: 1101px) {
   .c-header__logo-yard-sale {
@@ -646,7 +656,6 @@ header {
     height: 3rem;
     margin-left: 5.175rem;
     margin-right: 5.225rem;
-    cursor: pointer;
   }
 }
 .c-header__menu-lista {
@@ -680,6 +689,11 @@ header {
   }
 }
 @media (min-width: 1101px) {
+  .c-header__menu-lista-item:hover {
+    color: #000000;
+  }
+}
+@media (min-width: 1101px) {
   .c-header__menu-lista-item--verde-con-borde {
     color: #acd9b2;
     font-size: 1.6rem;
@@ -690,11 +704,20 @@ header {
     border-radius: 1rem;
   }
 }
+@media (min-width: 1101px) {
+  .c-header__menu-lista-item--verde-con-borde:hover {
+    color: #ffffff;
+    background-color: #acd9b2;
+  }
+}
 .c-header__menu-singin {
   display: none;
 }
 @media (min-width: 1101px) {
   .c-header__menu-singin {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -705,11 +728,8 @@ header {
     width: 25rem;
   }
 }
-.c-header__menu-singin :nth-child(1) {
-  display: none;
-}
 @media (min-width: 1101px) {
-  .c-header__menu-singin-items {
+  .c-header__menu-singin-item {
     color: #acd9b2;
     font-size: 1.4rem;
     font-weight: 500;
@@ -717,27 +737,101 @@ header {
     margin: auto 0.85rem;
     cursor: pointer;
   }
-  .c-header__menu-singin-items--color-negro {
+  .c-header__menu-singin-item--color-negro {
     color: #000000;
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 1.75rem;
+  }
+  .c-header__menu-singin-item--hiden {
+    display: none;
   }
 }
 .c-header__icon-carrito {
   width: 2rem;
   height: 2.1rem;
   margin-right: 1.85rem;
+  cursor: pointer;
 }
 @media (min-width: 1101px) {
   .c-header__icon-carrito {
     width: 2rem;
     height: 2.1rem;
     margin: auto 4.6rem;
-    cursor: pointer;
+  }
+}
+
+.c-menu-mobil {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #000000;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 2rem;
+}
+.c-menu-mobil__icono-cerrar {
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-right: 1.8rem;
+  margin-top: 2.2rem;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  cursor: pointer;
+}
+.c-menu-mobil__menu-item {
+  margin: 3rem auto 3rem 3.9rem;
+}
+.c-menu-mobil__linea {
+  border-bottom: 2px solid #979797;
+  mix-blend-mode: normal;
+  opacity: 0.1;
+  margin: 0.2rem 3.9rem 0.2rem 3.9rem;
+}
+.c-menu-mobil__account-item {
+  margin: 3rem auto 3rem 3.9rem;
+}
+.c-menu-mobil__menu-singin {
+  color: #acd9b2;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.75rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.c-menu-mobil__singin-item {
+  margin: 0.6rem auto 0.6rem 3.9rem;
+}
+.c-menu-mobil__singin-item.is-hiden {
+  display: none;
+}
+.c-menu-mobil__singin-item--texto-negro {
+  color: #000000;
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1.75rem;
+}
+@media (min-width: 1101px) {
+  .c-menu-mobil {
+    display: none;
   }
 }
 
 /* ======================================================= */
 /* END COMPONENTS */
+/* ======================================================= */
+/* ======================================================= */
+/* TRUMPS */
+/* ======================================================= */
+/* ======================================================= */
+/* END TRUMPS */
 /* ======================================================= */
