@@ -3,6 +3,7 @@
     display: flex;
     flex-direction: column;
     @include font-16-700-20($Ys-black);
+    height: 100%;
 
     &__icono-cerrar {
         width: 1.2rem;
@@ -30,22 +31,17 @@
         @include font-14-700-175($Ys-primary-color);
         display: flex;
         flex-direction: column;
+        margin-top: 5rem;
 
     }
 
     &__singin-item {
         @include margin2();
 
-        &.is-hiden {
-            display: none;
-        }
-
         &--texto-negro {
             @include font-14-300-175($Ys-black);
         }
     }
-
-
 
     @include sd() {
         display: none;

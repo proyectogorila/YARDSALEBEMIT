@@ -13,7 +13,7 @@
   </head>
   <body class="contenedor-body">
     <!--compmente headers-->
-    <header class="c-header o-header"><img class="c-header__logo-hamburger" src="../../assets/icons/icon_menu.svg" alt="menu hamburgesa"><img class="c-header__logo-yard-sale" src="../../assets/img/logo_yard_sale.svg" alt="logo yard-sale">
+    <header class="c-header o-header"><img class="c-header__logo-hamburger js-header-logo-hamburger" src="../../assets/icons/icon_menu.svg" alt="menu hamburgesa"><img class="c-header__logo-yard-sale" src="../../assets/img/logo_yard_sale.svg" alt="logo yard-sale">
       <div class="c-header__menu-lista">
         <div class="c-header__menu-lista-item c-header__menu-lista-item--verde-con-borde">All</div>
         <div class="c-header__menu-lista-item">Clothes</div>
@@ -23,16 +23,19 @@
         <div class="c-header__menu-lista-item">Others</div>
       </div>
       <div class="c-header__menu-singin">
-        <div class="c-header__menu-singin-item c-header__menu-singin-item--hiden">Sing in</div>
-        <div class="c-header__menu-singin-item c-header__menu-singin-item--color-negro">barriosloayza@gmail.com</div>
+        <div class="c-header__menu-singin-item is-hiden js-header__singin-menu">Sing in</div>
+        <div class="c-header__menu-singin-item c-header__menu-singin-item--color-negro js-header__email-menu">barriosloayza@gmail.com</div>
       </div><img class="c-header__icon-carrito" src="../../assets/icons/icon_shopping_cart_notification.svg" alt="carrito">
     </header>
-    <div class="c-menu-mobil"><a class="c-menu-mobil__icono-cerrar" href="#"><img class="menu-mobil__icono-cerrar-item" src="../../assets/icons/icon_close.png" alt=""></a>
+    <div class="c-menu-mobil is-hiden js-menu-mobil"><a class="c-menu-mobil__icono-cerrar js-cerrar-menu-mobil" href="#"><img class="menu-mobil__icono-cerrar-item" src="../../assets/icons/icon_close.png" alt=""></a>
       <div class="c-menu-mobil__menu"><span class="c-menu-mobil__menu-item c-menu-mobil__menu-item--titulo">CATEGORIES</span><a class="c-menu-mobil__menu-item" href="#">All</a><a class="c-menu-mobil__menu-item" href="#">Clothes</a><a class="c-menu-mobil__menu-item" href="#">Electronic</a><a class="c-menu-mobil__menu-item" href="#">Furnitures</a><a class="c-menu-mobil__menu-item" href="#">Toys</a><a class="c-menu-mobil__menu-item" href="#">Others</a></div>
       <div class="c-menu-mobil__linea"></div>
       <div class="c-menu-mobil__menu-account"><a class="c-menu-mobil__account-item" href="#">My orders</a><a class="c-menu-mobil__account-item" href="#">My account</a></div>
-      <div class="c-menu-mobil__menu-singin"><a class="c-menu-mobil__singin-item is-hiden" href="#">Sing in</a><a class="c-menu-mobil__singin-item c-menu-mobil__singin-item--texto-negro" href="#">barriosloayza@gmail.com</a><a class="c-menu-mobil__singin-item" href="#">Sing out </a></div>
+      <div class="c-menu-mobil__menu-singin"><a class="c-menu-mobil__singin-item is-hiden js-menu-mobil-item-singin" href="#">Sing in</a><a class="c-menu-mobil__singin-item c-menu-mobil__singin-item--texto-negro js-menu-mobil-item-email" href="#">barriosloayza@gmail.com</a><a class="c-menu-mobil__singin-item js-menu-mobil-item-singout" href="#">Sing out</a></div>
     </div>
-    <script src="../../js/header/header.js"></script>
+    <div class="c-menu-account-desktop o-container-menu is-hiden js-menu-account-desktop"><a class="c-menu-account-desktop__item" href="#">My orders</a><a class="c-menu-account-desktop__item" href="#">My account</a>
+      <div class="c-menu-account-desktop__item c-menu-account-desktop__item--linea"></div><a class="c-menu-account-desktop__item c-menu-account-desktop__item--texto-verde js-menu-account-desktop__singout">Sing out</a>
+    </div>
+    <script src="../../js/main.js"></script>
   </body>
 </html>
