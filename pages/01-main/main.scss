@@ -47,7 +47,10 @@
 /* OBJECTS */
 /* ======================================================= */
 @import '../../scss/objects/o-container-menu';
-
+@import '../../scss/objects/o-shopping-cart';
+@import '../../scss/objects/.o-shopping-cart__item';
+@import '../../scss/objects/o-resaltador';
+@import '../../scss/objects/o-button';
 
 /* ======================================================= */
 /* END OBJECTS */
@@ -60,6 +63,7 @@
 @import '../../scss/components/header';
 @import '../../scss/components/menu-mobil';
 @import '../../scss/components/menu-account-desktop';
+@import '../../scss/components/.c-shopping-cart';
 
 /* ======================================================= */
 /* END COMPONENTS */

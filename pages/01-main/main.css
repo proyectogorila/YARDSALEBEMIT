@@ -626,6 +626,83 @@ header {
   }
 }
 
+.o-shopping-cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 38.4rem;
+  height: 71.8rem;
+  position: absolute;
+  top: 5.5rem;
+  right: 0rem;
+  border: 1px solid #FFFFFF;
+  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.046805);
+          box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.046805);
+  padding: 2.4rem 1.5rem 2.4rem 1.5rem;
+}
+
+.o-shopping-cart__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 10rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.7rem;
+}
+
+.o-resaltador {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f7f7f7;
+  height: 7.6rem;
+  border-radius: 1rem;
+}
+
+.o-button-verde {
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 2.25rem;
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #acd9b2;
+  border: 1px solid #ACD9B2;
+  -webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.0001);
+          box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.0001);
+  border-radius: 10px;
+  height: 5.9rem;
+  cursor: pointer;
+}
+
 /* ======================================================= */
 /* END OBJECTS */
 /* ======================================================= */
@@ -850,6 +927,93 @@ header {
     font-weight: 700;
     line-height: 1.75rem;
     cursor: pointer;
+  }
+}
+
+.c-shopping-cart {
+  display: none;
+}
+@media (min-width: 1101px) {
+  .c-shopping-cart {
+    display: block;
+  }
+  .c-shopping-cart__menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 7rem;
+  }
+  .c-shopping-cart__icono-atras {
+    width: 2.4rem;
+    height: 1.6rem;
+    margin-right: 2.4rem;
+  }
+  .c-shopping-cart__titulo {
+    color: #000000;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 2.25rem;
+  }
+}
+@media (min-width: 1101px) {
+  .c-shopping-cart__item-image {
+    width: 8rem;
+    height: 8rem;
+    cursor: pointer;
+  }
+  .c-shopping-cart__item-name {
+    width: 17.7rem;
+    color: #797979;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 2.25rem;
+    cursor: pointer;
+  }
+  .c-shopping-cart__item-cost {
+    width: 12rem;
+    cursor: pointer;
+    color: #000000;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 2rem;
+  }
+  .c-shopping-cart__item-remove {
+    margin: auto 1rem;
+    width: 1.2rem;
+    height: 1.2rem;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    cursor: pointer;
+  }
+}
+@media (min-width: 1101px) {
+  .c-shopping-cart__total-container {
+    margin-top: 7rem;
+  }
+  .c-shopping-cart__titulo-total-container {
+    color: #000000;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1.75rem;
+    margin-left: 1.875rem;
+  }
+  .c-shopping-cart__total-precio-total-container {
+    color: #000000;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 2rem;
+    margin-right: 1.875rem;
   }
 }
 

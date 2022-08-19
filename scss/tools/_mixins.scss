@@ -72,7 +72,7 @@
 @mixin font-18-400-225($color) {
     color: $color;
     font-size: $Ys-fs18;
-    font-weight: 700;
+    font-weight: 400;
     line-height: 2.25rem;
 }
 
@@ -122,4 +122,20 @@
 
 @mixin margin2() {
     margin: 0.6rem auto 0.6rem 3.9rem;
+}
+
+//Buttom spam
+
+@mixin buttom-spam($color) {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color;
+    border: 1px solid #ACD9B2;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.0001);
+    border-radius: 10px;
+    height: 5.9rem;
+    cursor: pointer;
+
 }
