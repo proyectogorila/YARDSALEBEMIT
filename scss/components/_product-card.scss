@@ -1,0 +1,29 @@
+.product-card {
+    display: flex;
+    flex-direction: column;
+
+    &__image {
+        width: 16.88rem;
+        border-radius: 2rem;
+
+    }
+
+    &__product-info-container {
+        display: flex;
+
+
+    }
+
+    &__text-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__img-container {
+        width: 4rem;
+        height: 4rem;
+    }
+
+
+
+}

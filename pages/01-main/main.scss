@@ -37,6 +37,7 @@
 /* ======================================================= */
 
 @import '../../scss/elements/elements';
+@import '../../scss/elements/main-contenido';
 
 /* ======================================================= */
 /* END ELEMENTS */
@@ -63,7 +64,9 @@
 @import '../../scss/components/header';
 @import '../../scss/components/menu-mobil';
 @import '../../scss/components/menu-account-desktop';
-@import '../../scss/components/.c-shopping-cart';
+@import '../../scss/components/shopping-cart';
+@import '../../scss/components/product-card';
+
 
 /* ======================================================= */
 /* END COMPONENTS */

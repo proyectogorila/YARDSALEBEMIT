@@ -121,7 +121,7 @@
 }
 
 @mixin margin2() {
-    margin: 0.6rem auto 0.6rem 3.9rem;
+    margin: 0.6rem auto 2rem 3.9rem;
 }
 
 //Buttom spam
@@ -137,5 +137,6 @@
     border-radius: 10px;
     height: 5.9rem;
     cursor: pointer;
+    width: 100%;
 
 }

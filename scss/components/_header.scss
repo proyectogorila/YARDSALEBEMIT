@@ -3,7 +3,6 @@
 
     //Icono hamburgesa solo visible en la version mobile
     &__logo-hamburger {
-
         height: 1.754rem;
         width: 2.3rem;
         margin-left: 1.9rem;
@@ -12,6 +11,11 @@
         @include sd() {
             display: none;
         }
+    }
+
+    /* TITULO DEL MENU CARRITO EN MOBIL */
+    &__carrito-titulo {
+        @include font-16-700-20($Ys-black);
     }
 
     //Logo de yard sale a la izquierda en desktop y al centro en la version mobile

@@ -1,0 +1,10 @@
+.main-contenido {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, min(16.8rem));
+    grid-gap: 1.5rem;
+
+    @include sd() {
+        grid-template-columns: repeat(auto-fill, min(22.375rem));
+    }
+}

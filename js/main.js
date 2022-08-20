@@ -7,7 +7,12 @@ const jsHeaderLogoHamburger = document.querySelector('.js-header-logo-hamburger'
 const jsHeaderMenuEmail = document.querySelector('.js-header__email-menu');
 //ITEM SING IN EN HEADER PARA LOGEARSE (DESKTOP)
 const jsHeaderSinginMenu = document.querySelector('.js-header__singin-menu');
-
+//ICONO MENU CARRITO HEADER
+const jsHeaderCarrito = document.querySelector('.js-header-carrito');
+//LOGO YARD SALE
+const jsHeaderLogoYardSale = document.querySelector('.js-header__logo-yard-sale')
+//TITULO MENU CARRITO (MOBILE)
+const jsHeaderCarritoTitulo = document.querySelector('.js-header__carrito-titulo')
 
 //!MENU ACCOUT DESKTOP DEPLEGLABLE EN DESKTOP
 //MENU DESPLEGABLE ACCOUNT (DESKTOP)
@@ -28,6 +33,9 @@ const jsMenuMobilItemEmail = document.querySelector('.js-menu-mobil-item-email')
 //ITEM SING OUT (MOBIL)
 const jsMenuMobilItemSingout = document.querySelector('.js-menu-mobil-item-singout');
 
+//!MENU CARRITO
+//MENU DESPLEGABLE CARRITO (DESKTOP)
+const jsShoppingCart = document.querySelector('.js-shopping-cart')
 
 
 
@@ -38,6 +46,7 @@ const jsMenuMobilItemSingout = document.querySelector('.js-menu-mobil-item-singo
 jsHeaderMenuEmail.addEventListener('click', toogleMenuAccountDesktop);
 function toogleMenuAccountDesktop() {
     jsMenuAccountDesktop.classList.toggle('is-hiden');
+    jsShoppingCart.classList.add('is-hiden');
 }
 
 //SSING OUT (MENU ACCOUNT(DESKTOP))  (DESKTOP)
@@ -62,6 +71,10 @@ function addEmailMenu() {
 jsHeaderLogoHamburger.addEventListener('click', toogleHeaderLogoHamburger);
 function toogleHeaderLogoHamburger() {
     jsMenuMobil.classList.toggle('is-hiden');
+    jsShoppingCart.classList.add('is-hiden');
+    jsHeaderLogoYardSale.classList.remove('is-hiden');
+    jsHeaderCarritoTitulo.classList.add('is-hiden');
+
 }
 
 //CERRAR MENU MOBIL CON ICONO CERRAR (MOBIL)
@@ -85,3 +98,19 @@ function singinaccountmobil() {
     jsMenuMobilItemEmail.classList.remove('is-hiden');
     jsMenuMobilItemSingout.classList.remove('is-hiden');
 }
+
+//DESPLEGAR MENU CARRITO (DESKTOP-MOBIL)
+jsHeaderCarrito.addEventListener('click', toogleMenuCarrito);
+function toogleMenuCarrito() {
+    jsShoppingCart.classList.toggle('is-hiden');
+    jsMenuAccountDesktop.classList.add('is-hiden');
+    if (window.matchMedia("(max-width: 1101px)").matches) {
+        // Viewport is less or equal to 1101 pixels wide
+        jsHeaderLogoYardSale.classList.toggle('is-hiden');
+        jsHeaderCarritoTitulo.classList.toggle('is-hiden');
+        jsMenuMobil.classList.add('is-hiden');
+    }
+}
+
+
+
